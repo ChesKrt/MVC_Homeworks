@@ -1,5 +1,5 @@
 <?php 
-    require_once("../model/homework.php");
+    require_once("./model/homework.php");
 
     class HomeworkController
     {
@@ -13,7 +13,7 @@
         public function listing()
         {
             $homeworks = $this->model->getHomework();
-            include("../view/list.php");
+            include("./view/listing.php");
         }
 
         public function addNewHomework($description)
